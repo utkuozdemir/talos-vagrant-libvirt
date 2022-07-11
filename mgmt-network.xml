@@ -1,0 +1,21 @@
+<network ipv6='no'>
+    <name>talos-vagrant-libvirt-mgmt</name>
+    <uuid>f56c5b6c-1863-4298-8657-270bf6c3eaf7</uuid>
+    <forward mode='nat'>
+        <nat>
+            <port start='1024' end='65535'/>
+        </nat>
+    </forward>
+    <bridge name='virbr42' stp='on' delay='0'/>
+    <mac address='52:54:00:dd:3b:2e'/>
+    <ip address='192.168.42.1' netmask='255.255.255.0'>
+        <dhcp>
+            <range start='192.168.42.1' end='192.168.42.254'/>
+            <host mac='02:00:00:00:00:01' ip='192.168.42.101'/>
+            <host mac='02:00:00:00:00:02' ip='192.168.42.102'/>
+            <host mac='02:00:00:00:00:03' ip='192.168.42.103'/>
+            <host mac='02:00:00:00:00:04' ip='192.168.42.104'/>
+            <host mac='02:00:00:00:00:05' ip='192.168.42.105'/>
+        </dhcp>
+    </ip>
+</network>
